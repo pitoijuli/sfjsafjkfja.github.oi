@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Play Redirect</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 300px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px;
+      height: 70px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .play-btn::after {
+      content: '';
+      border-left: 20px solid black;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://via.placeholder.com/300x400" class="thumbnail">
+
+  <div class="play-btn" onclick="redirectNow()"></div>
+</div>
+
+<script>
+  function redirectNow() {
+    window.location.href = "https://t.co/Gml1RyGz3s";
+  }
+</script>
+
+</body>
+</html>
